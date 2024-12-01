@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Визуализатор</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <div id="control-panel">
+    <h3>API</h3>
+    <form id="api-form">
+      <label>
+        <strong>Пользователи:</strong>
+        <input type="text" id="user-api" value="https://your-api/users">
+      </label>
+      <label>
+        <strong>Группы:</strong>
+        <input type="text" id="group-api" value="https://your-api/groups">
+      </label>
+      <label>
+        <strong>Смещение:</strong>
+        <input type="number" id="offset" value="0">
+      </label>
+      <label>
+        <strong>Лимит:</strong>
+        <input type="number" id="limit" value="50">
+      </label>
+      <button type="submit">Загрузить данные</button>
+    </form>
+  </div>
+
+ 
+  <div id="info-panel">
+    <h3>Информация об узле</h3>
+    <p id="node-info">Нажмите на узел, для более подробной информации</p>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
