@@ -61,7 +61,7 @@ async function init(userApi, groupApi, offset, limit) {
   // Узлы пользователей
   users.forEach(user => {
     const position = randomPositionInCube(50); 
-    const color = user.sex === 'Male' ? 0x0000ff : 0xff00ff;
+    const color = user.sex === 'Male' ? 0x00ffff : 0xE06666;
     const sphere = createNode(position, color, user);
     nodes.push(sphere);
     nodeObjects.set(user.user_id, sphere);
@@ -71,7 +71,7 @@ async function init(userApi, groupApi, offset, limit) {
   // Узлы групп
   groups.forEach(group => {
     const position = randomPositionInCube(50);
-    const sphere = createNode(position, 0x00ff00, group);
+    const sphere = createNode(position, 0x9900FF, group);
     nodes.push(sphere);
     nodeObjects.set(group.group_id, sphere);
     nodePositions.set(group.group_id, position);
